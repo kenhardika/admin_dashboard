@@ -5,7 +5,7 @@
 .container{
     display: grid;
     border: 1px solid black;
-    grid-template-columns: repeat(4, 20vw);
+    grid-template-columns: repeat(4, 300px);
     grid-template-rows: repeat(4, 1fr);
 }
 
@@ -37,21 +37,21 @@
 
 ul{ 
     font-size: 22px;
-    border: 1px solid green;
+
 }
 
 .panel-1{
     display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-rows: repeat(6, auto);
+    align-content: center;
+    justify-items: flex-start;
+    grid-template-rows: repeat(6, 60px);
 }
 
 .panel-2{
     display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-rows: repeat(3, 80px);
+    align-items: flex-end;
+    justify-content: flex-start;
+    grid-template-rows: repeat(3, 50px);
 }
 
 li{
