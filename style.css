@@ -116,6 +116,11 @@ li a:active{
 
 .nav-user {
     display: flex;
+    align-items: center;
+}
+
+.nav-profile {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
