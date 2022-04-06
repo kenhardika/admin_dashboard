@@ -5,7 +5,7 @@
 .container{
     display: grid;
     border: 1px solid black;
-    grid-template-columns: repeat(4, clamp(150px, 20%, 300px));
+    grid-template-columns: repeat(4, clamp(150px, 40%, 20vw));
     grid-template-rows: repeat(4, 1fr);
 }
 
@@ -19,6 +19,8 @@
     font-family: 'Libre Franklin', sans-serif;   
     display: grid;
     grid-template-rows: 10vh;
+    /* and this one below */
+    grid-template-columns: 20vw;
     grid-auto-rows: auto;
 }
 
@@ -28,7 +30,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 15px;
-    font-size: clamp(20px, 30px, 10vh);
+    /* font-size: clamp( 2em, 50%, 3em ); fix this */
 }
 
 .dash-logo-text svg {
@@ -86,11 +88,11 @@ li a:active{
     
     font-family: 'Sora';
     display: grid;
-    width: 100vw;   
+    width: 79.9vw;   
     background-color: black;
     color: white;
     
-    grid-template-columns: clamp(200px, 60%, 550px) minmax(100px, 100vw);
+    grid-template-columns: clamp(200px, 60%, 550px) minmax(300px, 80vw);
     grid-template-rows: 50px;
     grid-auto-rows: auto;
 }
@@ -108,8 +110,9 @@ li a:active{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
+    padding-right: 40px;
     /* display: grid;
     grid-template-columns: 80px 80px auto;
     align-items: center; */
