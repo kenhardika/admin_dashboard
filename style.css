@@ -85,16 +85,15 @@ li a:active{
 .nav{
     display: grid;
     width: 100vw;   
-    border: 1px solid blue;
     background-color: black;
     color: white;
     
     grid-template-columns: 500px calc(100vw - 500px);
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 50px;
+    grid-auto-rows: auto;
 }
 
 .searchbar-profile{
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,4 +112,11 @@ li a:active{
     flex: 1;
     color: white;
     background-color: #292929;
+}
+
+.nav-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
