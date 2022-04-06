@@ -83,12 +83,14 @@ li a:active{
 }
 
 .nav{
+    
+    font-family: 'Sora';
     display: grid;
     width: 100vw;   
     background-color: black;
     color: white;
     
-    grid-template-columns: 500px calc(100vw - 500px);
+    grid-template-columns: clamp(200px, 60%, 550px) minmax(100px, 100vw);
     grid-template-rows: 50px;
     grid-auto-rows: auto;
 }
@@ -105,6 +107,12 @@ li a:active{
 .notif-profile{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* display: grid;
+    grid-template-columns: 80px 80px auto;
+    align-items: center; */
 }
 
 #searchbar {
@@ -112,6 +120,7 @@ li a:active{
     flex: 1;
     color: white;
     background-color: #292929;
+    border-radius: 20px;
 }
 
 .nav-user {
