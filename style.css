@@ -1,5 +1,10 @@
 *{
     margin: 0;
+    overflow: hidden;
+}
+
+:root{
+    --width-sidebar: 1.2vw;
 }
 
 .container{
@@ -30,16 +35,12 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 15px;
-    /* font-size: clamp( 2em, 50%, 3em ); fix this */
+    font-size: clamp(20px, 2vw, 33px);
+    width: minmax(10vw, 20vw);
 }
 
 .dash-logo-text svg {
-    padding-right: 10px;   
-}
-
-ul{ 
-    font-size: 22px;
-
+    padding-right: 10px;
 }
 
 .panel-1{
@@ -62,13 +63,14 @@ li{
 }
 
 li a {
+    font-size: 1.2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-decoration: none;
     color: white;
     gap: 10px;
-    width: 200px;
+    width: minmax(200px, 300px);    
     padding: 10px;
 }
 
@@ -82,6 +84,10 @@ li a:active{
     transform: translateY(2px);
     background-color: #292929;
     border-radius: 25px;
+}
+
+li svg {
+    width: auto;
 }
 
 .nav{
@@ -113,6 +119,7 @@ li a:active{
     justify-content: flex-end;
     gap: 20px;
     padding-right: 40px;
+    width: auto;
     /* display: grid;
     grid-template-columns: 80px 80px auto;
     align-items: center; */
@@ -136,4 +143,8 @@ li a:active{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.nav-action {
+    width: auto;
 }
