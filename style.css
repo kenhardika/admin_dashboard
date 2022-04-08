@@ -10,13 +10,13 @@
 .container{
     display: grid;
     border: 1px solid black;
-    grid-template-columns: repeat(4, clamp(150px, 40%, 20vw));
+    grid-template-columns: repeat(4, minmax(10vw, 20vw));
     grid-template-rows: repeat(4, 1fr);
 }
 
 .dashboard{
     grid-row: 1/5;
-    height: 99.7vh;
+    height: 100vh;
     box-sizing: border-box;
     border:1px solid black;
     background-color: #000000;
@@ -36,7 +36,7 @@
     justify-content: flex-start;
     padding-left: 15px;
     font-size: clamp(20px, 2vw, 33px);
-    width: minmax(10vw, 20vw);
+    width: 250px;
 }
 
 .dash-logo-text svg {
@@ -53,9 +53,10 @@
 
 .panel-2{
     display: grid;
-    align-items: flex-end;
-    justify-content: flex-start;
-    grid-template-rows: repeat(3, 50px);
+    align-content: center;
+    align-items: center;
+    justify-items: flex-start;
+    grid-template-rows: repeat(3, 60px);
 }
 
 li{
@@ -63,7 +64,7 @@ li{
 }
 
 li a {
-    font-size: 1.2vw;
+    font-size: clamp(14px, 1.2vw, 28px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,12 +87,11 @@ li a:active{
     border-radius: 25px;
 }
 
-li svg {
-    width: auto;
+li a {
+    padding-right: 10px;
 }
 
 .nav{
-    
     font-family: 'Sora';
     display: grid;
     width: 79.9vw;   
@@ -136,6 +136,7 @@ li svg {
 .nav-user {
     display: flex;
     align-items: center;
+    padding-left: 50px;
 }
 
 .nav-profile {
@@ -145,6 +146,20 @@ li svg {
     justify-content: center;
 }
 
+.user-name {
+    font-size: clamp(.8rem, 2vw, 1rem);
+}
+
+
+.nav-profile svg {
+    width: clamp(30px, 3vw, 50px);
+    padding: 0 10px;
+}
+
 .nav-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
+    gap: 30px;
 }
