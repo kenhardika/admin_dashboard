@@ -185,5 +185,33 @@ li a {
     height: auto;
 
     display: grid;
-    grid-template-columns: 60vw 20vw ;
+    grid-template-columns: 55vw 25vw ;
+}
+
+
+.title-content, .title-announce, .title-trending{
+    border: solid 1px gold;
+    background-color: black;
+    color: white;
+    padding: 10px 10px ; 
+    height: 5vh;
+    display: flex;
+    align-items: flex-end;
+    font-family: Sora, sans-serif;
+    font-size: clamp( 1rem, 2vw, 1.2rem);
+}
+
+.card {
+    display: grid;
+    height: 70vh;
+    padding: 20px;
+    gap: 20px;
+
+    background-color: yellowgreen;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 16vw));
+    grid-template-rows: repeat(auto-fit, minmax( 150px, 20vh));
+}
+
+.cards{
+    background-color: lightsteelblue;
 }
