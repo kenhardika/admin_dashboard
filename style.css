@@ -77,13 +77,13 @@ li a {
     padding: 10px;
 }
 
-li a:hover{
+li a:hover, .notif-profile svg:hover, .notif-name:hover, .nav-action button:hover{
     transform: translateY(-2px);
     background-color: #292929bb;
     border-radius: 25px;
 }
 
-li a:active{
+li a:active, .notif-profile svg:active, .notif-name:active, .nav-action button:active{
     transform: translateY(2px);
     background-color: #292929;
     border-radius: 25px;
@@ -124,6 +124,11 @@ li a {
     /* display: grid;
     grid-template-columns: 80px 80px auto;
     align-items: center; */
+}
+
+.notif-profile svg {
+    width: 30px;
+    height: 30px;
 }
 
 #searchbar {
@@ -169,9 +174,9 @@ li a {
 }
 
 .nav-action button{
-    background-color: #7d7d7d;
+    background-color: #484848;
     border-radius: 20px;
-    border: 1px solid #414141;
+    border: none;
     color: white;
 
     width: 100px;
@@ -227,6 +232,11 @@ li a {
     color: whitesmoke;
     border-left: 6px solid white;
     border-radius: 10px;
+    justify-content: space-around;
+}
+
+.cards:hover {
+    border: 6px solid white;
 }
 
 .cards-caption, .announce-caption{
@@ -235,9 +245,15 @@ li a {
 .cards-buttons{
     padding: 10px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
     gap: 5px;
+}
+.cards-buttons svg:hover, .trending-profile:hover {
+    transform: translateY(-2px);
+}
+.cards-buttons svg:active, .trending-profile:active  {
+    transform: translateY(2px);
 }
 
 .content-side {
