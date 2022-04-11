@@ -13,7 +13,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(4, minmax(10vw, 25vw));
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, minmax( 10vh, 25vh));
 }
 
 .dashboard{
@@ -99,10 +99,9 @@ li a {
     width: 75vw;   
     background-color: black;
     color: white;
-    
+    height: 20vh;
     grid-template-columns: clamp(200px, 80%, 30vw) minmax(300px, 45vw);
-    grid-template-rows: 10vh;
-    grid-auto-rows: auto;
+    grid-template-rows: 10vh 10vh;
 }
 
 .searchbar-profile{
@@ -194,8 +193,8 @@ li a {
 .title-content, .title-announce, .title-trending{
     background-color: black;
     color: white;
-    padding: 10px 20px ; 
-    height: 5vh;
+    padding: 0 20px ; 
+    height: 3vh;
     display: flex;
     align-items: flex-end;
     font-family: Sora, sans-serif;
@@ -211,13 +210,13 @@ li a {
     padding: 20px;
     gap: 20px;
     height: fit-content;
-
     background-color: #000000;
     grid-template-columns: repeat(auto-fit, minmax(250px, 16vw));
     grid-template-rows: repeat(auto-fit, minmax( 150px, 20vh));
 }
 
 .cards{
+    overflow:hidden;
     font-size: clamp(0.8rem, 1vw, 15px);
     font-family: Nunito, sans-serif;
     display: flex;
@@ -246,8 +245,8 @@ li a {
 }
 .announce-sec {
     display: grid;
-    height: 35vh;
-    padding: 20px;
+    height: 40vh;
+    padding: 20px 20px 10px 20px;
     gap: 5px ;
     grid-template-rows: repeat(3, minmax(110px, 10vh));
     grid-template-columns: minmax(165px, 15vw);
@@ -264,4 +263,37 @@ li a {
 }
 .announce-caption {
     padding-bottom: 5px;
+}
+
+.trending-sec {
+    display: grid;
+    height: 18vh;
+    padding: 10px 20px;
+    gap: 5px ;
+    grid-template-rows: minmax(110px, 10vh);
+    grid-template-columns: minmax(165px, 15vw);
+}
+
+.trending-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    height: 13vh;
+    color: whitesmoke;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #414141;
+    border-bottom: 2px solid white;
+}
+
+.trending-profile {
+    gap: 5px;
+    padding: 2px;
+    font-family: Ninito, sans-serif;
+    font-size: clamp(0.8rem, 1vw ,14px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
