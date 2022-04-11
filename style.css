@@ -23,7 +23,7 @@
     display: grid;
     grid-template-rows: 10vh;
     /* and this one below */
-    grid-template-columns: minmax(10vw, 20vw);
+    grid-template-columns: minmax(10vw, 25vw);
     grid-auto-rows: auto;
 }
 
@@ -92,12 +92,12 @@ li a {
 .nav{
     font-family: 'Sora';
     display: grid;
-    width: 78vw;   
+    width: 75vw;   
     background-color: black;
     color: white;
     
-    grid-template-columns: clamp(200px, 60%, 550px) minmax(300px, 80vw);
-    grid-template-rows: 50px;
+    grid-template-columns: clamp(200px, 80%, 30vw) minmax(300px, 45vw);
+    grid-template-rows: 10vh;
     grid-auto-rows: auto;
 }
 
@@ -183,7 +183,7 @@ li a {
     height: auto;
 
     display: grid;
-    grid-template-columns: 55vw 23vw ;
+    grid-template-columns: 55vw 20vw ;
 }
 
 
@@ -198,11 +198,15 @@ li a {
     font-size: clamp( 1rem, 2vw, 1.2rem);
 }
 
+.content-cards {
+    background-color: #000;
+}
+
 .card {
     display: grid;
-    height: 542px;
     padding: 20px;
     gap: 20px;
+    height: fit-content;
 
     background-color: #000000;
     grid-template-columns: repeat(auto-fit, minmax(250px, 16vw));
@@ -238,7 +242,7 @@ li a {
 }
 .announce-sec {
     display: grid;
-    width: 20vw;
+    width: 15vw;
     height:35vh;
     padding: 20px;
     gap: 10px ;
@@ -254,7 +258,3 @@ li a {
     font-size: 13px;
     border-left: 6px solid white;
 }
-/* 
-.announce-caption {
-
-} */
